@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #020617;
+  color: white;
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10%;
+  background: #020617;
+  position: sticky;
+  top: 0;
+}
+
+.logo span {
+  color: #00f7ff;
+  text-shadow: 0 0 10px #00f7ff;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* HERO SECTION */
+.hero {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #020617;
+  text-align: center;
+}
+
+.hero span {
+  color: #00f7ff;
+  text-shadow: 0 0 10px #00f7ff;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: transparent;
+  border: 2px solid #00f7ff;
+  color: #00f7ff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #00f7ff;
+  color: black;
+  box-shadow: 0 0 15px #00f7ff;
+}
+
+/* SECTIONS */
+section {
+  padding: 80px 10%;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #00f7ff;
+}
+/* CARD LAYOUT */
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  border: 1px solid #00f7ff;
+  padding: 30px;
+  width: 250px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 15px #00f7ff;
+}
+/* SCROLL REVEAL ANIMATION */
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 1s;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+#typing {
+  color: #00f7ff;
+  border-right: 2px solid #00f7ff;
+  padding-right: 5px;
+}
+/* HAMBURGER MENU */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* MOBILE VIEW */
+@media (max-width: 768px) {
+
+  .menu-toggle {
+    display: block;
+  }
+
+  #nav-links {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: #020617;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    display: none;
+  }
+
+  #nav-links li {
+    padding: 15px 0;
+  }
+}
+/* WHATSAPP FLOAT BUTTON */
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #00f7ff;
+  color: black;
+  font-size: 24px;
+  padding: 15px;
+  border-radius: 50%;
+  text-decoration: none;
+  box-shadow: 0 0 15px #00f7ff;
+}
